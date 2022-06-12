@@ -16,5 +16,4 @@ include_directories(
 
 add_library(${calcname} ${calc_sources})
 
-target_link_libraries(${calcname} calc)
 target_include_directories(${calcname} PUBLIC "$<BUILD_INTERFACE:${CALC_INC}>")
